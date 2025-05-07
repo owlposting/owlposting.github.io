@@ -1,0 +1,66 @@
+/* Load the custom font */
+@font-face {
+    font-family: 'HVD-Poster';
+    src: url('HVD-Poster.ttf') format('truetype');
+    
+    font-family: 'OldNewspaperTypes';
+    src: url('OldNewspaperTypes.ttf') format('truetype');
+  }
+  
+  /* General body styling */
+  body {
+    font-family: 'OldNewspaperTypes','OldNewspaperTypes';
+    background-color: black;
+    color: white;
+    margin: 10px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('grid-gradient.png'); /* Example background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  /* Header section styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 4em;
+    font-family: 'HVD-Poster', 'OldNewspaperTypes','OldNewspaperTypes';
+  }
+
+  .nav-buttons button {
+    background-color: black;
+    border: 2px solid red;
+    color: red;
+    font-size: 1em;
+    font-family: 'OldNewspaperTypes', 'HVD-Poster'; /* Match the fonts */
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-shadow: -1px -1px 0px rgba(255,255,255,0.3); /* Add depth */
+    background-image: url('scratched-overlay.png'); /* Overlay texture */
+    background-size: cover;
+    background-blend-mode: multiply; /* Blend the image with the button color */
+  }
+  
+  .nav-buttons button:hover {
+    background-color: red;
+    color: white;
+    background-image: url('scratched-overlay.png'); /* Keep the texture on hover */
+    text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
+  }
+
+
+  P { text-align: center }
+
+  IMG.p-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Mi
+  
